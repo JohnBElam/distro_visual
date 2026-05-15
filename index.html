@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Probability Distribution Visualizer</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Probability Distribution Relationships</h1>
+      <p class="subtitle">Interactive visualization of univariate distributions and how they connect</p>
+    </header>
+
+    <div class="layout">
+      <aside id="sidebar">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search distributions…" autocomplete="off" />
+        </div>
+        <div class="dist-list-section">
+          <h3>Discrete</h3>
+          <ul id="discrete-list" class="dist-list"></ul>
+        </div>
+        <div class="dist-list-section">
+          <h3>Continuous</h3>
+          <ul id="continuous-list" class="dist-list"></ul>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <section id="graph-section">
+          <h2>Relationship Map</h2>
+          <div id="graph-container"></div>
+          <div id="graph-legend">
+            <span class="legend-item"><span class="legend-dot discrete"></span> Discrete</span>
+            <span class="legend-item"><span class="legend-dot continuous"></span> Continuous</span>
+            <span class="legend-item"><span class="legend-line"></span> Related</span>
+          </div>
+        </section>
+
+        <section id="detail-section" class="hidden">
+          <button id="back-btn">&larr; Back to overview</button>
+          <div id="detail-header">
+            <h2 id="detail-name"></h2>
+            <span id="detail-type-badge"></span>
+          </div>
+          <p id="detail-description"></p>
+
+          <div id="params-panel">
+            <h3>Parameters</h3>
+            <div id="params-controls"></div>
+          </div>
+
+          <div class="charts-row">
+            <div class="chart-card">
+              <h3 id="pdf-title">PDF</h3>
+              <div id="pdf-chart"></div>
+            </div>
+            <div class="chart-card">
+              <h3>CDF</h3>
+              <div id="cdf-chart"></div>
+            </div>
+          </div>
+
+          <div id="related-section">
+            <h3>Related Distributions</h3>
+            <div id="related-list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
