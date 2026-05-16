@@ -1,0 +1,28 @@
+{
+  "name": "distro-visual",
+  "version": "1.0.0",
+  "description": "Interactive visualization of probability distribution relationships",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnBElam/distro_visual.git"
+  },
+  "keywords": ["statistics", "distributions", "visualization", "d3"],
+  "author": "John B Elam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnBElam/distro_visual/issues"
+  },
+  "homepage": "https://github.com/JohnBElam/distro_visual#readme",
+  "devDependencies": {
+    "vite": "^8.0.13"
+  },
+  "dependencies": {
+    "d3": "^7.9.0"
+  }
+}
